@@ -26,6 +26,11 @@ public partial class GameContainer : Node
     }
 
     /// <summary>
+    /// Defines the reference to the interface node.
+    /// </summary>
+    public Control? Interface { get; protected set; }
+
+    /// <summary>
     /// Constructs a new <see cref="GameContainer"/> instance and assignes the reference to it to <see cref="Instance"/>.
     /// </summary>
     public GameContainer()
@@ -50,6 +55,7 @@ public partial class GameContainer : Node
     public override void _Ready()
     {
         // Fetch and assign the child node variables if they have not been assigned yet.
+        this.Interface ??= this.GetNode<Control>("Interface");
 
         // Pass to the base class' function.
         base._Ready();
