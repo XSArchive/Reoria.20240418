@@ -11,9 +11,18 @@ config_version=5
 [application]
 
 config/name="Reoria"
+config/version="0.1.0"
 run/main_scene="res://Nodes/Engine/GameContainer.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+window/stretch/scale_mode="integer"
 
 [dotnet]
 
@@ -23,3 +32,18 @@ project/solution_directory="..\\..\\"
 [gui]
 
 theme/custom="res://Data/Themes/Reoria.tres"
+
+[input_devices]
+
+pointing/android/enable_long_press_as_right_click=true
+
+[physics]
+
+3d/default_gravity=0.0
+3d/default_gravity_vector=Vector3(0, 0, 0)
+2d/default_gravity=0.0
+2d/default_gravity_vector=Vector2(0, 0)
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
