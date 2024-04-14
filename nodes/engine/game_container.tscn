@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dql23xi72saxi"]
+
+[ext_resource type="PackedScene" uid="uid://d242hehkmiqul" path="res://nodes/interface/main_menu.tscn" id="1_7gmj3"]
+[ext_resource type="PackedScene" uid="uid://cwr453fs3dc40" path="res://nodes/interface/network_menu.tscn" id="2_ko721"]
+
+[node name="GameContainer" type="Node"]
+
+[node name="Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenu" parent="Interface" instance=ExtResource("1_7gmj3")]
+layout_mode = 1
+
+[node name="NetworkMenu" parent="Interface" instance=ExtResource("2_ko721")]
+layout_mode = 0

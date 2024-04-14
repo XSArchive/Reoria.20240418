@@ -12,8 +12,8 @@ config_version=5
 
 config/name="Reoria"
 config/version="0.1.0"
-run/main_scene="res://Nodes/Engine/GameContainer.tscn"
-config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+run/main_scene="res://nodes/engine/game_container.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
@@ -31,7 +31,7 @@ project/solution_directory="..\\..\\"
 
 [gui]
 
-theme/custom="res://Data/Themes/Reoria.tres"
+theme/custom="res://data/themes/reoria.tres"
 
 [input_devices]
 
