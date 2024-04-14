@@ -12,3 +12,63 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MainMenu" type="PanelContainer" parent="Interface"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -135.0
+offset_right = 240.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContainer" type="VFlowContainer" parent="Interface/MainMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="Header" type="Label" parent="Interface/MainMenu/MenuContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Reoria
+"
+
+[node name="Spacer" type="TextureRect" parent="Interface/MainMenu/MenuContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="ButtonJoin" type="Button" parent="Interface/MainMenu/MenuContainer"]
+layout_mode = 2
+text = "Join
+"
+
+[node name="ButtonHost" type="Button" parent="Interface/MainMenu/MenuContainer"]
+layout_mode = 2
+text = "Host"
+
+[node name="ButtonQuit" type="Button" parent="Interface/MainMenu/MenuContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="NetworkMenu" type="PanelContainer" parent="Interface"]
+visible = false
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 60.0
+
+[node name="MenuContainer" type="VFlowContainer" parent="Interface/NetworkMenu"]
+layout_mode = 2
+
+[node name="LabelStatus" type="Label" parent="Interface/NetworkMenu/MenuContainer"]
+layout_mode = 2
+text = "Status: Not Connected"
+
+[node name="Button" type="Button" parent="Interface/NetworkMenu/MenuContainer"]
+layout_mode = 2
+text = "Disconnect
+"
