@@ -12,7 +12,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Status: Not Connected"
 
-[node name="Button" type="Button" parent="MenuContainer"]
+[node name="ButtonDisconnect" type="Button" parent="MenuContainer"]
 layout_mode = 2
 text = "Disconnect
 "
